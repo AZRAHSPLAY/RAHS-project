@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Voluntariado</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="date"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        .links a {
+            display: block;
+            margin: 5px 0;
+            color: #007BFF;
+            text-decoration: none;
+        }
+        .links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>BIENVENIDO A RAHS VOLUNTARY SYSTEM</h1>
+        <h2>Esta página está destinada a facilitar el registro de personas humanitarias a diferentes fundaciones benéficas para así poder ser parte de estas causas y hacer un cambio en el mundo.</h2>
+        <hr>
+        <h3>Favor de realizar el formulario a continuación para dar inicio</h3>
+        <hr>
+        <form>
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ej: Richard Adrian" required>
+            
+            <label for="apellido">Apellido</label>
+            <input type="text" id="apellido" name="apellido" placeholder="Ej: Heureaux Sena" required>
+            
+            <label for="email">Correo Electrónico</label>
+            <input type="email" id="email" name="email" placeholder="Ej: ejemplo@correo.com" required>
+            
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="Ej: 809-123-4567" required>
+            
+            <label for="direccion">Dirección</label>
+            <input type="text" id="direccion" name="direccion" placeholder="Ej: Calle 123, Ciudad, País" required>
+            
+            <label for="fecha_nacimiento">Fecha de Nacimiento</label>
+            <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+            
+            <label for="comentario">Razón de que quiera unirse a nuestro sistema</label>
+            <textarea id="comentario" name="comentario" placeholder="Ingrese aquí su motivo" rows="4" required></textarea>
+            
+            <input type="submit" value="Enviar">
+        </form>
+        <hr>
+        <h3>Nuestras páginas benéficas asociadas:</h3>
+        <div class="links">
+            <a href="https://www.dominicanasolidaria.org/organizacion/chemonics-international/">Chemonics International</a>
+            <a href="https://www.dominicanasolidaria.org/organizacion/nature-power-foundation-npf-2/">Nature Power Foundation-NPF</a>
+            <a href="https://www.dominicanasolidaria.org/organizacion/fundacion-jose-delio-guzman-fjdg/">Fundación José Delio Guzmán-FJDG</a>
+            <a href="https://www.dominicanasolidaria.org/organizacion/entrena-srl-2/">ENTRENA SRL</a>
+        </div>
+        <hr>
+    </div>
+</body>
+</html>
